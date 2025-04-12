@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos y Mapas Ambientales</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Temperatura del Mar en la Costa Caribe Colombiana</h2>
+    <canvas id="graficoTemperatura"></canvas>
+
+    <script>
+        const ctx = document.getElementById('graficoTemperatura').getContext('2d');
+        const data = {
+            labels: ["Bolívar", "Córdoba", "Sucre", "San Andrés"],
+            datasets: [{
+                label: "Temperatura (°C)",
+                data: [28, 27, 29, 30],  // Datos ficticios, se pueden reemplazar con API
+                backgroundColor: ["#ff6384", "#36a2eb", "#ffcd56", "#4bc0c0"]
+            }]
+        };
+
+        new Chart(ctx, {
+            type: "bar",
+            data: data
+        });
+    </script>
+</body>
+</html>

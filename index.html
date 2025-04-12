@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L20</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+     <!-- Estilos de Leaflet para el mapa -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">L20</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">¿Por qué es importante?</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Problemáticas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links cta__nav">!Aprende más!</a>
+                </li>
+
+                <img src="Images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="Images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <div class="objects">
+            <div class="object21"><img src="Images/image 21.png" alt="Imagén alusiva a un cohete."></div>
+            <div class="object28"><img src="Images/image 28.png" alt="Imagén alusiva a una nube pequeña."></div>
+            <div class="object29"><img src="Images/image 29.png" alt="Imagén alusiva a una nube grande."></div>
+            <div class="object67"><img src="Images/image 67.png" alt="Imagén alusiva a una avion de papel."></div>
+        </div>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Protegiendo los ecosistemas de Bolívar, Córdoba, Sucre y San Andrés.</h1>
+            <p class="hero__paragraph">En el mundo, la variedad de vida en la Tierra, incluyendo especies, genes y ecosistemas. Su conservación es crucial para mantener el equilibrio ecológico y proporcionar bienes y servicios esenciales como la purificación del aire y el agua, la polinización de cultivos y la regulación del clima.</p>
+            <a href="#" class="cta">!Aprende más!</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+           <div class="card__about">
+            <h2 class="subtitle">🌿- Biodiversidad y Ecosistemas Costeros</h2>
+            <p class="about__paragraph">¿Por qué es importante?
+                "La biodiversidad garantiza el equilibrio de los ecosistemas costeros, siendo clave para la pesca, el turismo ecológico y la seguridad alimentaria de las comunidades. Protegerla es asegurar el futuro de quienes dependen del mar."</p>
+           </div>
+
+           <div class="card__about2">
+            <h2 class="subtitle">🧭– Turismo y Conectividad Internacional</h2>
+            <p class="about__paragraph">¿Por qué es importante?
+                "El turismo sostenible impulsa la economía local y promueve el intercambio cultural. Una buena conectividad internacional facilita el acceso de visitantes, potenciando el desarrollo regional sin comprometer los recursos naturales."</p>
+           </div>
+
+           <div class="card__about3">
+            <h2 class="subtitle">📦– Comercio y Desarrollo Local</h2>
+            <p class="about__paragraph">¿Por qué es importante?
+                "El comercio justo y sostenible genera empleo, dinamiza la economía y fortalece los lazos entre comunidades. Apostar por productos locales es una forma directa de cuidar el entorno y mejorar la calidad de vida."</p>
+           </div>
+
+             <div class="back__vector">
+                <div class="vector5"><img src="Images/image 25.png" alt="Imagén alusiva de un señor"></div>
+                <div class="vector6"><img src="Images/image 26.png" alt="Imagén alusiva a un joven"></div>
+           </div>
+        </section>
+
+       <section class="problematic__cards">
+        <h2 class="problematic__title">Problemáticas</h2>
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Contaminación por plásticos y desechos.</h2>
+                    <p class="knowledge__paragraph">“Cada año, 8 millones de toneladas de plástico llegan a los océanos, afectando la vida marina y las costas.”</p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="Images/Contaminación.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Sobre pesca.</h2>
+                    <p class="knowledge__paragraph">“La sobrepesca ha reducido las poblaciones de peces en un 90% en algunas regiones del Caribe.”/a>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="Images/sobrepesca (1).jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Deforestación de manglares.</h2>
+                    <p class="knowledge__paragraph">“Hemos perdido más del 35% de los manglares, esenciales para la protección costera y la biodiversidad.”</p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="Images/deforestacion.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Cambio climático y aumento del nivel del mar.</h2>
+                    <p class="knowledge__paragraph">“El nivel del mar ha subido 8 cm en los últimos 30 años, amenazando comunidades costeras.”</p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="Images/cambio_climatico.webp" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+       </section>
+
+       <section class="pollution">
+            <h2 class="problematic__title">Grafica de contaminación</h2>
+            <canvas id="contaminacionAgua"></canvas>
+            <script>
+            const ctx = document.getElementById('contaminacionAgua').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                labels: ['Bolívar', 'Córdoba', 'Sucre', 'San Andrés'],
+                datasets: [{
+                    label: 'Nivel de contaminación (PPM)',
+                    data: [120, 90, 110, 80],  // Datos de ejemplo
+                    backgroundColor: ['red', 'orange', 'yellow', 'green']
+                }]
+                },
+                options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                    display: true,
+                    text: 'Contaminación del agua por departamento'
+                    }
+                }
+                }
+            });
+            </script>
+        </section>
+
+       <section class="graficTemperature">
+                <h2 class="problematic__title">🌿 Graficas y mapas de la biodiversidad y Control Costero.</h2>
+                <a class="button__grafic containerg" href="graficas.html" target="_blank">Ver grafica ambiental</a>
+                <a class="button__grafic containerg" href="zona_costera.html" target="_blank">🌎 Ir al Mapa</a>
+        </section>
+    </main>
+
+    <form action="">
+        <div class="container__form">
+            <h2>Formulario de contacto</h2>
+            <label>Nombre</label>
+            <input type="text" placeholder="Liseth">
+            <label>E-mail</label>
+            <input type="email" placeholder="kh8s8vwn2sgsveh@gmail.com" id="">
+            <label>Comentario</label>
+            <textarea placeholder="Ingrese aquí su mensaje..."></textarea>
+            <button class="form__button">Enviar</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Lorem</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; LGBH</h3>
+        </section>
+    </footer>
+
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
